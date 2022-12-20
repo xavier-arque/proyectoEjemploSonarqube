@@ -50,6 +50,6 @@ public class AppTest {
     @Test
     public void test_mitad() {
         double devuelto = App.Mitad(10);
-        Assert.assertEquals( 2.5 , devuelto , 0);
+        Assert.assertEquals( 4 , devuelto , 0);
     }
 }
