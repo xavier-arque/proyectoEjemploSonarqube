@@ -17,7 +17,12 @@ pipeline {
         }
         stage('Ejecución de pruebas unitarias') {
             steps {
-                sh 'mvn test jacoco:report'
+                sh 'mvn test'
+            }
+        }
+        stage('Ejecución de report jacoco') {
+            steps {
+                sh 'mvn jacoco:report'
             }
         }
         stage('Lanzar el analisis de Sonarqube') {
